@@ -1,0 +1,131 @@
+
+.window {
+  width: 80%;
+  color: rgb(0, 0, 0);
+  margin: auto;
+}
+
+.field {
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.2em;
+}
+
+
+.hello, .title, .about, .buttons {
+  visibility: hidden;
+  animation: hello 0.5s ease-in forwards;
+}
+
+.hello, .name, .info {
+
+  background-image: radial-gradient(rgb(255, 81, 0), black);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hello {
+  font-size: 4.2em;
+  text-transform: uppercase;
+}
+
+
+.title {
+  font-size: 2em;
+  animation-delay: 0.4s; 
+}
+
+
+.about {
+  font-size: 1.1em;
+  width: 100%;
+  color: rgb(81, 81, 81);
+  animation-delay: 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0 2em 0;
+}
+
+.info {
+  width: max-content;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin-top: 0.2em;
+}
+
+.info:hover {
+  transform: scale(1.1);
+  color: orange;
+}
+
+.buttons {
+  font-size: 0.95em;
+  animation-delay: 1.2s;
+}
+
+
+.buttons >:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes hello {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    transform: scale(0.7) translateY(20px);
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+
+@media screen and (max-width:900px) {
+    .window {
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width:700px) {
+  .window {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width:500px) {
+    .field {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:330px) {
+  .field {
+    font-size: 16px
+  }
+  .hello {
+    font-size: 3.6em;
+  }
+}
+
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .about {
+    margin: 0.5em 0 1em 0;
+  }
+  .field {
+    font-size: 18px;
+  }
+}

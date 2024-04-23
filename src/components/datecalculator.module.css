@@ -1,0 +1,154 @@
+.datecalc {
+  width: 60%;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.calculator {
+  background-color: black;
+  border-radius: 2em;
+  box-shadow: 0 0 10px black;
+  padding: 1.5em 1em 0 1em;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 0.5em;
+  color: var(--orange-color);
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.now div:first-of-type {
+  font-size: 1.7em;
+}
+
+.now div:last-of-type {
+  font-size: 2.2em;
+}
+
+.choise {
+  padding: 1em 0 1.5em 0;
+  min-height: 140px;
+  width: 100%;
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+}
+
+
+.input, .inputdates {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.input i {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  text-shadow: 0 0 2px white;
+}
+
+.input i:hover {
+  color: var(--orange-color);
+}
+
+.calculation {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 0 0.7em rgba(255, 255, 255, 0.511);
+  border-radius: 2em;
+  padding: 1em 0.1em;
+}
+
+.time {
+  font-size: 1.5em;
+  min-height: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.format {
+  height: 2.2em;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+.format button {
+  background-color: black;
+  font-size: 0.6em;
+  border: none;
+  box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.511);
+  height: 2.5em;
+  width: 3.2em;
+  color: white;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.format button:hover {
+  background-color: var(--orange-color);
+  color: black;
+  opacity: 1;
+}
+
+.format button:disabled {
+  background-color: var(--orange-color);
+  color: black;
+  opacity: 1;
+  cursor: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .datecalc {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .datecalc {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .datecalc {
+    width: 95%;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .datecalc {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .inputdates {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .datecalc {
+    font-size: 14px;
+  }
+}
+

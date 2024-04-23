@@ -1,0 +1,74 @@
+.file {
+    color: black;
+width: 700px;
+height: max-content;
+    margin: 20px 40px;
+    font-size: 18px;
+}
+
+.hide {
+    display: none;
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.texttitle {
+    font-weight: bold;
+}
+
+.text {
+    padding: 10px 0;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.outputtitle {
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.report {
+    height: max-content;
+}
+
+.block {
+    margin-bottom: 5px;
+}
+
+.totalincludes {
+    margin-left: 20px;
+}
+
+.attachment {
+    margin-left: 30px;
+}
+
+.line {
+    display: flex;
+    gap: 10px;
+}
+
+
+span{
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.datefield {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.date {
+    font-weight: normal;
+}

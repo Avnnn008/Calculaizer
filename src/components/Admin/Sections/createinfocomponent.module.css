@@ -1,0 +1,18 @@
+.newcomponent {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.newcomponent input, .newcomponent input:focus {
+    font-size: 16px;
+    outline: none;
+    padding: 2px;
+}
+
+.newcomponent i:hover {
+    cursor: pointer;
+    color: orange;
+}

@@ -1,0 +1,25 @@
+.timerfield {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+}
+
+.timerfield, .timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.timer {
+    margin: auto;
+    width: max-content;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px black;
+    font-size: 16px;
+    padding: 10px;
+}

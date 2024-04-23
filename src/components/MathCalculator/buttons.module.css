@@ -1,0 +1,82 @@
+ .buttons, .additional {
+    display: grid;
+    grid-template-columns: repeat(var(--buttons-cols), 1fr);
+    grid-template-rows: repeat(var(--buttons-rows), 1fr);
+    gap: var(--buttons-between-and-bottom-paddings);
+    padding: var(--buttons-paddings);
+    padding-top: var(--buttons-between-and-bottom-paddings);
+    position: absolute;
+    left: 0;
+    top: var(--display-height);
+  }
+  
+  .additional {
+  visibility: hidden;
+  }
+  
+  .buttons button, .additional button {
+    border-radius: 50%;
+    width: var(--button-small-size);
+    height: var(--button-small-size);
+    font-size: 1.1rem;
+    border: none;
+    background-color: var(--dark-gray-color);
+    color: white;
+    cursor: pointer;
+  }
+  .buttons .clear {
+    grid-area: 1/1/2/2;
+  }
+  .buttons .cancel {
+    grid-area: 1/2/2/3;
+  }
+  
+  .buttons .divide {
+    grid-area: 1/3/2/4;
+  }
+  .buttons .multiply {
+    grid-area: 1/4/2/5;
+  }
+  .buttons .subtract {
+    grid-area: 2/4/3/5;
+  }
+  .buttons .add {
+    grid-area: 3/4/4/5;
+  }
+  
+  .buttons .equals {
+    grid-area: 4/4/6/5;
+    height: var(--button-large-size);
+  }
+  .buttons .zero {
+    grid-area: 5/1/6/3;
+    width: var(--button-large-size);
+  }
+  .buttons .zero,
+  .buttons .equals {
+    border-radius: 20px;
+  }
+  .buttons .clear,
+  .buttons .equals,
+  .buttons .cancel {
+    background-color: var(--light-gray-color);
+    color: black;
+  }
+  .buttons .divide,
+  .buttons .multiply,
+  .buttons .subtract,
+  .buttons .add {
+    background-color: var(--orange-color);
+  }
+
+  .additional .degrad {
+    /* background-color: var(--light-gray-color); */
+    font-size: 0.7rem;
+    /* color: black; */
+    grid-area: 3/4/4/5;
+  }
+
+  .current {
+    color: var(--orange-color);
+    font-size: 1.1rem;
+  }

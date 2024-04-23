@@ -1,0 +1,116 @@
+.window {
+    width: 60%;
+    max-width: 900px;
+    min-height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    padding-bottom: 20px;
+    width: 100%;
+    background: radial-gradient(ellipse at top, #ffffff, transparent),
+            radial-gradient(ellipse at bottom, #000000, transparent);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    position: relative;
+}
+
+
+.back {
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.63);
+    cursor: pointer;
+}
+
+.back:hover i {
+    color: var(--orange-color);
+}
+
+.field {
+    width: 90%;
+}
+
+.info {
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.579);
+    border-radius: 20px;
+    background: radial-gradient(ellipse at top,  #000000, transparent, rgb(151, 139, 117)),
+            radial-gradient(ellipse at bottom, #000000, transparent, rgb(151, 139, 117));
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid black;
+}
+
+.infofield {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infofield button {
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.572);
+}
+
+.email {
+    font-size: 0.8em;
+    padding-left: 0.05em;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+
+.btns {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+
+@media screen and (max-width:799px) {
+    .window {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .window {
+        width: 90%;
+    }}
+
+@media screen and (max-width:320px) {
+    .window {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-height:600px) {
+    .window {
+        font-size: 18px;
+    }
+    .info {
+        margin-bottom: 0.5em;
+    }
+
+}

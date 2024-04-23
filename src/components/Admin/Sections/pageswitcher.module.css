@@ -1,0 +1,22 @@
+.pageSwitcher {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+
+}
+
+.pageSwitcher i {
+    cursor: pointer;
+    color: black;
+}
+
+.pageSwitcher i:hover {
+    color: orange;
+}
+
+.hide{
+    visibility: hidden;
+}

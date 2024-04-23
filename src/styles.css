@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+:root {
+  --nav-height: 10%;
+  --nav-margin: calc(var(--nav-height) / 2);
+  --app-height: calc(100% - var(--nav-height));
+  --calc-width: calc(
+    var(--button-small-size) * var(--buttons-cols) + var(--buttons-cols-spaces) *
+      var(--buttons-between-and-bottom-paddings) + var(--buttons-paddings) * 2
+  );
+  --top-bottom-fields-margin: 1rem;
+
+  --calc-height: calc(var(--buttons-field-height) + var(--display-height));
+
+  --history-height: calc(var(--calc-height) * 0.9);
+  --history-width: var(--calc-width);
+  --history-list-width: calc(var(--history-width) * 0.9);
+  --history-list-height: calc(var(--history-height) * 0.9);
+  --expression-width: calc(var(--history-width) * 0.6);
+  --history-movie: transform 0.5s ease-in-out;
+
+  --visible-btn-width: 1.5rem;
+  --visible-btn-height: 2rem;
+
+  --display-height: 7rem;
+
+  --buttons-field-height: calc(var(--button-small-size) * var(--buttons-rows) + var(--buttons-rows-spaces) * var(--buttons-between-and-bottom-paddings));
+
+  --button-small-size: 70px;
+  --button-large-size: calc(
+    var(--button-small-size) * 2 + var(--buttons-between-and-bottom-paddings)
+  );
+  --buttons-cols: 4;
+  --buttons-cols-spaces: calc(var(--buttons-cols) - 1);
+  --buttons-rows-spaces: calc(var(--buttons-rows) + 2);
+  --buttons-rows: 5;
+  --buttons-between-and-bottom-paddings: calc(var(--button-small-size) / 7);
+  --buttons-paddings: calc(var(--buttons-between-and-bottom-paddings) * 2);
+--dark-gray-color: rgba(76, 76, 76, 0.9);
+  --light-gray-color: rgba(205, 205, 205, 0.9);
+  --orange-color: rgba(255, 166, 0, 0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  overflow: hidden;
+  font-family: 'Play', sans-serif;
+  color: white;
+  -webkit-text-size-adjust: 100%;
+}
+
+#app {
+  width: 100%;
+  height: var(--app-height);
+  background: linear-gradient(
+    rgba(205, 205, 205, 0.9),
+    rgba(255, 166, 0, 0.9) 205%
+  );
+  padding: 20px 0;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: var(--nav-height);
+  left: 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(134, 134, 134, 0.513) black;
+}
+
+
+#app::-webkit-scrollbar {
+  width: 5px;
+}
+
+#app::-webkit-scrollbar-track {
+  background: black;
+}
+
+#app::-webkit-scrollbar-thumb {
+  background-color: rgba(134, 134, 134, 0.513);
+}
+
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+#math-calculator {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) and (min-width: 680px) {
+  html {
+    font-size: 17px;
+  }
+ :root {
+  --button-small-size: 60px
+ }
+}
+@media screen and (max-width: 680px) and (min-width: 599px) {
+  html {
+    font-size: 16px;
+  }
+  :root {
+   --button-small-size: 55px
+  }
+ }
+
+ @media screen and (max-width: 599px) and (min-width: 390px) {
+  :root {
+    --top-bottom-fields-margin: 0
+  }
+
+  #math-calculator {
+    flex-direction: column;
+  }
+
+  .fa-caret-left {
+    padding-left: 0.25rem;
+  }
+
+ }
+
+ @media screen and (max-width: 390px) and (min-width: 330px) {
+  html {
+    font-size: 17px;
+  }
+  :root {
+    --top-bottom-fields-margin: 0;
+    --button-small-size: 60px;
+  }
+  #math-calculator {
+    flex-direction: column;
+  }
+
+  .fa-caret-left {
+    padding-left: 0.25rem;
+  }
+
+ }
+
+ @media screen and (max-width: 330px) {
+  html {
+    font-size: 14px;
+  }
+  :root {
+    --top-bottom-fields-margin: 0;
+    --button-small-size: 50px;
+  }
+  #math-calculator {
+    flex-direction: column;
+  }
+
+  .fa-caret-left {
+    padding-left: 0.25rem;
+  }
+
+ }
+
+ @media (orientation: landscape) and (max-height: 600px) {
+  html {
+    font-size: 15px;
+  }
+  :root {
+    --button-small-size: 55px;
+  }
+ }

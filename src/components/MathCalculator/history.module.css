@@ -1,0 +1,74 @@
+.history {
+  height: var(--history-height);
+  width: var(--history-width);
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.visibleHistoryBtn {
+  width: var(--visible-btn-width);
+  height: var(--visible-btn-height);
+  position: absolute;
+  top: 1rem;
+  right: calc(0px - var(--visible-btn-width));
+  background-color: rgba(0, 0, 0, 0.424);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  transition: var(--history-movie);
+}
+.visibleHistoryBtn:hover {
+  cursor: pointer;
+  background-color: var(--orange-color);
+}
+
+.visibleHistoryBtn i {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.historyField {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(16, 16, 16);
+  transition: var(--history-movie);
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hide {
+  transform: translateX(calc(0px - var(--history-width)));
+  z-index: 0;
+  transition: var(--history-movie);
+}
+
+.moveBtn {
+  transform: translateX(calc(0px - var(--history-width)));
+  z-index: 0;
+  transition: var(--history-movie);
+}
+
+@media screen and (max-width: 599px) {
+  .history {
+    margin-bottom: 0.5rem;
+  }
+
+  .historyField {
+    border-radius: 20px;
+  }
+
+  .visibleHistoryBtn {
+    top: auto;
+    bottom: calc(0rem - var(--visible-btn-width));
+    left: 1.5rem;
+    transform: rotate(90deg) translateX(calc(0px - var(--history-height)));
+  }
+
+  .hide {
+    transform: translateY(calc(0px - var(--history-height)));
+  }
+  .moveBtn {
+    transform: rotate(90deg) translateX(calc(0px - var(--history-height)));
+  }
+}

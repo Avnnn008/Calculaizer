@@ -1,0 +1,10 @@
+.window {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: auto;
+    padding: 20px 0;
+}
+
+

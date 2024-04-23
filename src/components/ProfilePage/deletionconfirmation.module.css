@@ -1,0 +1,70 @@
+.password {
+    font-size: 16px;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.input {
+    font-size: 1em;
+    width: 50%;
+}
+
+.buttons i {
+    cursor: pointer;
+    color: black;
+    font-size: 1.1em;
+}
+
+.buttons i:hover, .buttons i:active {
+    color: var(--orange-color)
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.load {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.hint {
+    width: 90%;
+    font-size: 0.8em;
+    color: rgb(220, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .input {
+        width: 90%;
+    }
+    .buttons i {
+        font-size: 1.2em;
+    }
+}
+
+@media  screen and (max-width:350px) {
+    .password {
+        font-size: 14px;
+    }
+    .input {
+        width: 100%;
+    }
+}

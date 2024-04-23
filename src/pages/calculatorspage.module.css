@@ -1,0 +1,111 @@
+.window {
+    position:absolute;
+    overflow-y: visible;
+    width: 40%;
+    top: -5px;
+    text-align: center;
+    z-index: 9;
+    font-size: 20px;
+}
+
+.window i {
+    font-size: 40px;
+}
+
+.window i:hover {
+    color: var(--orange-color);
+    cursor: pointer;
+}
+
+.empty {
+    height: 60px;
+}
+
+.list, .list div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0 5px rgb(0, 0, 0);
+    text-shadow: 0px 0 1px rgb(255, 255, 255);
+    margin-bottom: 2px;
+}
+
+.calc, .noavailable {
+    width: 97%;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+    background: 
+            radial-gradient(ellipse at top, #ffffff, transparent, rgb(151, 139, 117));
+    cursor: pointer;
+    box-shadow: 0px 0 5px black;
+    margin-bottom: 2px;
+}
+
+.inverse {
+    background: 
+            radial-gradient(ellipse at top, #000000, rgba(20, 20, 20, 0.707), rgb(216, 198, 164));
+            color: white;
+}
+
+.calc:hover {
+    background-color: rgba(255, 166, 0, 0.698);
+    color: white;
+}
+
+.noavailable {
+    background-color: rgba(240, 183, 183, 0.298);
+    cursor: auto;
+}
+
+@media screen and (max-width:1200px) {
+    .window {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .window {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .window {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .window {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .window {
+        width: 90%;
+    }
+    .calc {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .calc {
+        font-size: 14px;
+    }
+
+}

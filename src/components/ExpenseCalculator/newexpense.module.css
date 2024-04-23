@@ -1,0 +1,59 @@
+.form, .form div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+}
+
+.form div {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form label {
+    text-align: center;
+}
+
+.form input[type='text'], .form input[type='text']:focus {
+    width: 200px;
+}
+.form input[type='number'], .form input[type='number']:focus {
+    width: 100px;
+}
+
+.form input[type='date'], .form input[type='date']:focus {
+    margin-left: 3px
+}
+
+.form input::placeholder {
+ font-size: 14px;
+}
+
+.form i {
+    color: white;
+    font-size: 30px;
+}
+
+.form i:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.form select {
+    font-size: 14px;
+    max-width: 200px;
+}
+
+.loading {
+position: absolute;
+top: 15px;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+
+

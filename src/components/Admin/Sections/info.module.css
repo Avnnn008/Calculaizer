@@ -1,0 +1,38 @@
+.info {
+    width: 100%;
+    min-height: 30px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: 16px;
+    position: relative;
+}
+
+.close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: white;
+  border: 0.2px solid black;
+  top: -10px;
+  right: -10px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: orange;
+  background-color: black;
+
+}
+
+.loading {
+    position: absolute;
+    top: 10px;
+  }

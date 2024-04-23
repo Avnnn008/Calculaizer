@@ -1,0 +1,35 @@
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.search input {
+ outline: none;
+ font-size: 16px;
+ padding: 2px;
+}
+
+.loading {
+    position: absolute;
+    top: 80px;
+}
+
+.deleteerrors {
+    width: 100%;
+    
+}
+
+.deleteerrors div {
+    font-size: 14px;
+    color: rgb(44, 44, 66);
+    font-weight: bold;
+}
+
+.deleteerrors div:hover {
+    cursor: pointer;
+    color: orange;
+}

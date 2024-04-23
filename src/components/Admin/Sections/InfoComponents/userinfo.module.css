@@ -1,0 +1,134 @@
+.user {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions i {
+  color: black;
+  padding-top: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.actions i:hover {
+  color: orange;
+}
+
+.vip {
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+.switch {
+    position: relative;
+    display: flex;
+    width: 36px;
+    height: 18px;
+  }
+  .switch input {display:none;}
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 10px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+
+  .tokens {
+    width: 100%;
+  }
+
+  .tokenlist {
+    padding: 5px;
+  }
+
+  .device {
+    border-bottom: 0.5px solid gray;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1%;
+  }
+
+  .device div:first-child {
+    width: 50%;
+    word-wrap: break-word;
+  }
+
+  .device div:nth-child(2) {
+    width: 43%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .device div:last-child {
+    width: 5%;
+    text-align: right;
+  }
+
+  .email button, .device button {
+    font-size: 12px;
+  }
+
+  .loading {
+    position: absolute;
+    top: 10px;
+  }
+
+  
+
+
+  @media screen and (max-width: 398px) {
+    .email {
+       gap: 5px;
+    }
+  }

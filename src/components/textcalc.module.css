@@ -1,0 +1,193 @@
+.window {
+    width: 65%;
+    margin: auto;
+    font-size: 24px;
+    background-color: black;
+    border-radius: 2em;
+    box-shadow: 0 0 10px black;
+    padding: 1.5em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    color: var(--orange-color);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.7em;
+}
+
+.textfield {
+    width: 95%;
+    position: relative;
+}
+
+.textfield textarea {
+    min-height: 60px;
+    word-wrap: break-word;
+}
+
+
+.btn {
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
+
+
+.btn i:hover {
+    cursor: pointer;
+    color: var(--orange-color);
+}
+
+.link {
+    visibility: hidden;
+}
+
+.save {
+    width: 100%;
+    text-align: center;
+}
+
+.result {
+    margin-top: 0.5em;
+    width: 95%;
+    box-shadow: 0 0 0.7em rgba(255, 255, 255, 0.511);
+  border-radius: 1em;
+  padding: 1em 0.5em;
+  padding-bottom: 0.2em;
+}
+
+.block {
+    margin-bottom: 0.5em;
+    border: 0.1px solid rgba(224, 224, 224, 0.513);
+    padding: 0.3em;
+    border-radius: 0.5em;
+}
+
+.block:last-of-type {
+    margin-bottom: 0;
+}
+.total {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.symbolinput {
+    width: 30%;
+}
+
+.symbolinput input, .symbolinput input:focus {
+    width: 100%;
+}
+
+.symbolinput input::placeholder {
+    font-size: 0.8em;
+    
+}
+
+.count {
+    color: var(--orange-color);
+}
+
+.totalincludes {
+    font-size: 0.85em;
+    margin-left: 1em;
+}
+
+.attachment {
+    font-size: 0.85em;
+    margin-left: 1em;
+    width: 95%;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.attachmentincludes {
+    font-size: 0.9em;
+    margin-left: 0.5em;
+    width: 55%;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .window {
+      width: 75%;
+    }
+  }
+
+  @media screen and (max-width: 860px) {
+    .window {
+      width: 85%;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .window {
+      width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .line {
+        display: block;
+    }
+    .attachmentincludes {
+        width: 100%;
+        margin: 0.1em 0 0.2em 1em;
+    }
+    .symbolinput {
+        width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .window {
+      font-size: 22px;
+      padding: 1.2em 0.3em;
+    }
+    .totalincludes {
+        margin-left: 0.5em;
+    }
+    .result {
+        padding: 1em 0.3em;
+        padding-bottom: 0.2em;
+    }
+    .attachment {
+        font-size: 0.9em;
+    }
+    .attachmentincludes {
+        font-size: 1em;
+    }
+    .symbolinput {
+        width: 50%;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .window {
+        font-size: 20px;
+    }
+    .symbolinput {
+       width: 65%;
+
+    }
+    
+  }

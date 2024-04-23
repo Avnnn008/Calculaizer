@@ -1,0 +1,50 @@
+.name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 0.3em; 
+   
+}
+
+.namefield {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.namefield h2 {
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.namefield i {
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(0, 0, 0); 
+}
+
+.namefield i:hover {
+    color: var(--orange-color)
+}
+
+.namefield i:active {
+    color: var(--orange-color)
+}
+
+.name input {
+    width: 100%;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding: 0.2em 0 0.1em 0.3em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.05rem solid rgba(255, 255, 255, 0.613);
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+    color: rgb(0, 0, 0); 
+}
+

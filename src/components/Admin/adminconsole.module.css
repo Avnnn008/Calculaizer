@@ -1,0 +1,74 @@
+.consolewindow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 50px 0 20px 0;
+}
+
+.console {
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+}
+
+.sections {
+    position: absolute;
+    font-size: 14px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+}
+
+.sections div {
+    background-color: rgba(128, 128, 128, 0.282);
+   word-wrap: break-word;
+    text-align: center;
+    padding: 5px 10px;
+    box-shadow: 0 1px 4px black;
+    cursor: pointer;
+    border-radius: 0 0 5px 5px ;
+}
+
+.sections div:hover {
+    background-color: rgba(80, 80, 80, 0.282);
+    box-shadow: 0 1px 1px black;
+}
+
+.sections .selected, .sections .selected:hover {
+    cursor: auto;
+    box-shadow: 0 1px 4px black;
+    background-color: rgb(255, 208, 121);
+}
+
+
+.block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+

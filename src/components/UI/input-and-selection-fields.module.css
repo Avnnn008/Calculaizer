@@ -1,0 +1,88 @@
+.select {
+    text-align: center;
+    text-align-last: center;
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-size: 1em;
+    background-color: transparent;
+    border-radius: 0.5em;
+    border: none;
+    border-bottom: 1px double orange;
+    color: rgb(255, 255, 255);
+    border-top: 0.5px solid rgba(221, 221, 221, 0.17);
+    min-width: 150px;
+    cursor: pointer;
+}
+
+.select option {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.95em;
+}
+
+.select option:disabled {
+    background-color: rgb(179, 179, 179);
+}
+
+.smallsize {
+    font-size: 0.9em;
+    padding: 5px 10px;
+}
+
+.input, .input:focus {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border-radius: 0.5em;
+    width: 150px;
+    padding: 0.5em;
+    min-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 0.5px 1.5px white;
+    cursor: pointer;
+}
+
+.smallinput, .smallinput:focus {
+    width: 100px;
+}
+
+.input[type="number"]::-webkit-outer-spin-button,
+.input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+.input[type='number'],
+.input[type="number"]:hover,
+.input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.input::placeholder {
+    color: gray;
+}
+
+.textarea {
+    width: 100%;
+    background-color: rgba(101, 101, 101, 0.141);
+    color: white;
+    outline: none;
+    border-radius: 0.7em;
+    padding: 0.5em 0.8em;
+    font-size: 16px;
+    resize: vertical;
+    border: none;
+    border: 5px double rgb(0, 0, 0);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.282);
+}
+
+.textarea::placeholder {
+    text-align: center;
+}
+
+
+
+

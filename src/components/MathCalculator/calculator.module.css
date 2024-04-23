@@ -1,0 +1,86 @@
+.calculator {
+    width: var(--calc-width);
+    height: calc(var(--display-height) + var(--buttons-field-height));
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 0.5rem black;
+    z-index: 2;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+  }
+  .display {
+    width: var(--calc-width);
+    height: var(--display-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .smallDisplay {
+    width: calc(var(--calc-width) * 0.95);
+    height: 4rem;
+    margin-top: 0.5rem;
+    padding: 0 0.5rem 0 1rem;
+    overflow-y: scroll;
+    font-size: 1rem;
+    text-align: right;
+    word-wrap: break-word;
+  }
+
+  .smallDisplay::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .smallDisplay::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  .smallDisplay::-webkit-scrollbar-thumb {
+    background-color: rgba(134, 134, 134, 0.513);
+  }
+
+  .largeDisplay {
+    width: calc(var(--calc-width) * 0.9);
+    height: 3rem;
+    margin-right: calc(var(--calc-width) * 0.05);
+    font-size: 2.25rem;
+    text-align: right;
+    word-wrap: break-word;
+  }
+  
+  .showHideAdditional {
+    position: absolute;
+    right: 0;
+    top: calc(var(--buttons-field-height) / 2 + 50px);
+    height: 100px;
+    width: calc(var(--buttons-paddings) * 0.75);
+    padding-left: 0.25rem;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--dark-gray-color);
+    border: none;
+    z-index: 3;
+  
+  }
+  
+  .showHideAdditional:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .showHideAdditional i {
+    font-size: 0.8rem;
+    color: white;
+  }
+  
+  .leftSide {
+    transform: translateX(calc(0px - var(--calc-width)));
+  }
+
+  @media screen and (max-width: 599px) {
+    .calculator {
+      margin-top: 0.5rem
+    }
+   }
+  
+   
+  

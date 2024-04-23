@@ -1,0 +1,223 @@
+.notesblock, .eventsblock {
+font-size: 20px;
+border-bottom: 2px solid rgb(0, 0, 0);
+border-radius: 10px;
+}
+
+.eventsblock {
+    margin-top: 20px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.add {
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
+
+.add:hover {
+    color: orange;
+}
+
+
+.notelist, .eventlist {
+    width: 98%;
+    margin: 0.5em auto 0.2em auto;
+    min-height: 5vh;
+    max-height: 20vh;
+    overflow-y: scroll;
+}
+
+.notelist::-webkit-scrollbar, .eventlist::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .notelist::-webkit-scrollbar-track, .eventlist::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  .notelist::-webkit-scrollbar-thumb, .eventlist::-webkit-scrollbar-thumb {
+    background-color: rgba(134, 134, 134, 0.513);
+  }
+
+
+.nonotes, .noevents {
+    text-align: center;
+    font-size: 0.75em;
+    margin-top: 0.5em;
+}
+
+.note, .event, .dev {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.519);
+    border-radius: 5px;
+    padding: 0.5em;
+    font-size: 0.9em;
+    border: 0.2px solid rgb(185, 180, 172);
+    margin-bottom: 1px;
+}
+
+.upcoming {
+    background-color: rgb(236, 241, 177);
+}
+
+.today {
+    background-color: rgb(210, 247, 210);
+}
+
+
+.past {
+    background-color: rgb(240, 218, 218);
+}
+
+
+.upcoming:hover {
+    background-color: rgb(240, 253, 137);
+}
+
+.today:hover {
+    background-color: rgba(151, 252, 137);
+}
+
+
+.past:hover {
+    background-color: rgb(255, 192, 192);
+}
+
+
+.info {
+    display: flex;
+    width: 95%;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.dev .info {
+    cursor: auto;
+}
+
+.note .name, .event .name {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.event .name {
+    width: 40%;
+}
+
+
+.note .name {
+    width: 65%;
+}
+
+.dev .name {
+    width: 45%;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.date, .difference {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.note .date {
+    width: 35%;
+}
+
+.event .date {
+    width: 20%;
+}
+
+.dev .date {
+    width: 50%;
+}
+
+.difference {
+    width: 35%;
+}
+
+.delete {
+    width: 5%;
+    text-align: center;
+}
+
+
+.note:hover{
+    background-color: rgb(185, 180, 172);
+}
+
+
+.delete i {
+    cursor: pointer;
+}
+
+
+.delete i:hover {
+    color: var(--orange-color);
+}
+
+.loading {
+    position: absolute;
+    left: 43%;
+    top: 20%;
+}
+
+
+@media screen and (max-width:500px) {
+.event .date {
+    display: none;
+    width: 0%;
+}
+
+.event .name {
+    width: 60%;
+}
+.difference {
+    width: 40%;
+}
+
+}
+
+@media screen and (max-width:380px) {
+    .notesblock, .eventsblock {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    .date, .difference {
+        font-size: 0.6em;
+    }
+
+    .dev .name {
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-height:600px) {
+    .notelist, .eventlist {
+        max-height: 30vh;
+    }
+
+}

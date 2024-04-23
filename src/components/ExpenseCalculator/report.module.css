@@ -1,0 +1,40 @@
+.report {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.272);
+}
+
+.title {
+    font-size: 24px;
+    color: orange;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.subtitle {
+    position: relative;
+}
+
+.lefticon {
+    position: absolute;
+    left: -30px;
+}
+
+.righticon {
+    position: absolute;
+    right: -30px;
+}
+
+.subtitle i:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.categoriestitle {
+    margin-top: 20px;
+}

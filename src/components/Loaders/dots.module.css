@@ -1,0 +1,47 @@
+
+.dots {
+    margin: auto;
+    font-size: 1em;
+    display: flex;
+    gap: 0.7em;
+    
+}
+
+@keyframes saving {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.dots div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.794);
+    animation: saving 2s linear infinite ;
+}
+
+
+.dark div {
+    background-color: black;
+}
+
+.dots div:nth-of-type(2) {
+    animation-delay: 0.5s;
+}
+
+.dots div:nth-of-type(3) {
+    animation-delay: 1s;
+}

@@ -1,0 +1,396 @@
+.generator {
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.window {
+    width: 100%;
+    position: relative;
+    background-color: black;
+    border-radius: 2em;
+  box-shadow: 0 0 10px black;
+  padding: 2em 1em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maintitle {
+   text-transform: uppercase;
+    font-size: 2em;
+    color: var(--orange-color); 
+}
+
+.ai {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.notice {
+    width: 100%;
+    color: rgb(92, 92, 92);
+    text-align: center;
+    font-size: 14px;
+}
+
+.ai a, .notice a {
+    color: gray;
+    text-decoration: none;
+}
+
+
+.ai a:hover, .notice a:hover {
+    cursor: pointer;
+    color: rgba(255, 219, 151, 0.753);
+}
+
+.input {
+    width: 100%;
+    text-align: center;
+}
+
+.input form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.fields {
+    font-size: 0.9em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.fields select {
+    font-size: 16px;
+    min-width: 100px;
+    padding: 7px;
+}
+
+
+.textfield {
+    width: 100%;
+}
+
+.textfield textarea {
+    height: 80px;
+    min-height: 80px;
+    max-height: 15em;
+    text-align: center;
+}
+
+.input button {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    background-color: var(--orange-color);
+    border-radius: 0.5em;
+    padding: 0.5em 1.2em;
+    border: none;
+    cursor:pointer;
+    box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.744);
+}
+
+.input button:disabled {
+    opacity: 0.9;
+    cursor:auto;
+    background-color: gray;
+}
+
+.limit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 1.5em;
+    font-size: 16px;
+}
+
+.limit div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.limit span {
+    color: var(--orange-color);
+    margin-left: 5px;
+}
+
+.output {
+    width: 100%;
+    min-height: 90px;
+    margin: auto;
+    margin-top: 2em;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading, .info{
+    font-size: 18px;
+    margin: auto;
+    width: 100%;
+}
+
+.image {
+    margin: auto;
+    margin-top: 0.5em;
+    max-width: 85%;
+    position: relative;
+}
+
+
+.image img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 1em;
+    word-wrap: break-word;
+}
+
+
+.save, .process, .ready {
+    position: absolute;
+    bottom: 0.2em;
+    left: 0;
+    width: 100%;
+    height: 2.2em;
+    border-radius: 0 0 1em 1em;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    
+    
+}
+.process {
+    background-color: rgba(45, 45, 45, 0.386);
+}
+
+.save {
+  cursor: pointer;
+   color: rgba(255, 255, 255, 0.794);
+    background-color: rgba(45, 45, 45, 0.386); 
+}
+
+.save:hover, .ready {
+    background-color: rgba(255, 166, 0, 0.382);
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+
+/* GALLERY */
+
+.galleryBtn {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 50px;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    background-color: rgba(126, 126, 126, 0.405);
+    background-color: rgba(101, 101, 101, 0.342);
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.794);
+    font-size: 0.9em;
+}
+
+.galleryBtn div {
+    margin: auto;
+}
+
+.galleryBtn:hover {
+    background-color: rgba(126, 126, 126, 0.405);
+    color: rgba(255, 166, 0, 0.809);
+}
+
+.gallery {
+    position: absolute;
+    width: 96%;
+    top: 0;
+    left: 2%;
+    font-size: 20px;
+    background-color:  rgba(0, 0, 0, 0.95);
+    box-shadow: 0 3px 5px rgba(255, 255, 255, 0.67);
+    border-radius: 2em;
+    display: flex;
+    padding: 1em;
+    padding-top: 2em;
+}
+
+.galleryField {
+    width: 100%;
+    overflow-y: scroll;
+    min-height: 200px;
+    max-height: 420px;
+    padding: 0.5em;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.galleryField::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .galleryField::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  .galleryField::-webkit-scrollbar-thumb {
+    background-color: rgba(134, 134, 134, 0.513);
+  }
+
+.galleryInfo {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.galleryloading {
+    position: absolute;
+    top: 35%;
+    left: 44%;
+    z-index: 2;
+}
+
+.picture {
+    display: flex;
+    align-items: center;
+    margin: 0.25em 0;
+    padding: 0.25em 0.5em;
+    border-bottom: 1px solid rgba(208, 208, 208, 0.507);
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    gap: 1em;
+}
+.picture .icon {
+    position: relative;
+    width: 20%;
+}
+.picture a {
+    width: 100%;
+}
+.picture img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0.5em;
+}
+
+.size {
+position: absolute;
+bottom: 0.3em;
+width: 100%;
+height: 1.2em;
+border-radius: 0 0 0.5em 0.5em;
+background-color: rgba(128, 128, 128, 0.527);
+font-size: 0.9em;
+
+}
+
+
+.name {
+    color: white;
+    width: 75%; 
+}
+
+.picture i {
+    width: 5%;
+    cursor: pointer;
+    color: white;
+}
+
+.picture i:hover {
+    color: var(--orange-color);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .generator {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .generator {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .generator {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .image {
+        margin: auto;
+        width: 100%;
+    }
+    .picture .icon {
+       width: 30%; 
+    }
+    .name {
+        width: 65%
+    }
+    
+}
+
+
+@media screen and (max-width: 467px) {
+   /*  .limit div:last-of-type span {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.2em;
+    } */
+    .picture {
+        font-size: 0.7em;
+    }
+    .size {
+        font-size: 0.8em;
+    }
+    .picture .icon {
+        width: 35%; 
+     }
+     .name {
+         width: 60%
+     }
+}
+
+
+@media screen and (max-width: 330px) {
+    .generator {
+        font-size: 16px;
+    }
+    .size {
+        display: none;
+    }
+}

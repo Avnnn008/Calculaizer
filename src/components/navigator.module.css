@@ -1,0 +1,76 @@
+.navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 1px 5px rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 0 40px 0 20px;
+}
+
+.navBar > div {
+  display: flex;
+  align-items: center;
+}
+
+
+.title a {
+    color: white;  
+    text-transform: uppercase;
+  text-shadow: 0 0 0.5rem black;
+  text-decoration: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.title a:hover {
+  color: var(--orange-color);
+}
+
+.navLinks {
+  gap: 2.5em;
+}
+
+.navLinks i {
+   font-size: 1.2em;
+  color: white;
+}
+
+.navLinks i:hover {
+  color: var(--orange-color);
+  text-shadow: 0 0 0.5rem black;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px) {
+  .navBar {
+    padding: 0 20px 0 10px;
+    font-size: 18px;
+  }
+  .navLinks {
+    gap: 1.5em
+  }
+
+}
+
+@media screen and (max-width: 330px) {
+  .navBar {
+    font-size: 16px;
+    padding: 0 10px 0 5px
+  }
+
+}
+
+@media screen and (max-width: 300px) {
+  .navLinks {
+    gap: 0.8em
+  }
+}
+

@@ -1,0 +1,78 @@
+.historyList {
+    overflow-y: scroll;
+    height: var(--history-list-height);
+    width: var(--history-list-width);
+  }
+
+  .historyList::-webkit-scrollbar {
+    width: auto;
+  }
+  
+  .historyList::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  .historyList::-webkit-scrollbar-thumb {
+    background-color: rgba(134, 134, 134, 0.513);
+  }
+  
+  .clearHistory {
+    width: 80%;
+    height: 4%;
+    font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+  }
+  
+  .clearHistory p {
+    width: max-content;
+    cursor: pointer;
+  }
+  
+  .clearHistory p:hover {
+    color: var(--orange-color)
+  }
+
+  .emptyStore {
+    text-align: center; 
+    font-size: 0.8rem;
+  }
+  
+ .historyItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.25rem 0;
+    padding: 0.25rem 0.5rem;
+    border-bottom: 1px solid rgba(208, 208, 208, 0.507);
+    border-radius: 0.5rem;
+  }
+  
+ .historyItem:hover {
+    background-color: rgb(50, 50, 50);
+  }
+  
+ .historyItem button {
+    background-color: transparent;
+    border: none;
+  }
+  
+ .historyItem i {
+    font-size: 1rem;
+  }
+  
+ .historyItem i:hover {
+    color: var(--orange-color);
+    cursor: pointer;
+  }
+  
+  .expression {
+    width: var(--expression-width);
+    font-size: 0.8rem;
+    height: auto;
+    word-wrap: break-word;
+  }
+
+  .loading {
+    position: absolute;
+  }
